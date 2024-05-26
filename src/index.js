@@ -1,17 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "./CSS/style.css";
+import Header from './Header';
+import Footer from './Footer';
+import Students from './Students';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function MainBody() {
+  const whatWeWillLearn = "React Js";
+  const lectureCount = 3;
+  return (
+    <div>
+      <p>
+        In this course, we will learn {whatWeWillLearn} by building taskdev.
+        <br />
+        Total Lecture - {lectureCount}
+      </p>
+      <ul>
+        <li>Basic Foundation</li>
+        <li>Functional and Components</li>
+      </ul>
+    </div>
+  );
+}
+
+root.render(
+  <div>
+    <Header />
+    <MainBody />
+    <Students />
+    <Footer />
+  </div>
+);
