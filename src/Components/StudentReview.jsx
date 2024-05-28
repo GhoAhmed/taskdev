@@ -1,4 +1,7 @@
-export default function StudentReview () {
+import React from "react";
+
+class StudentReview extends React.Component {
+  render() {
     return (
       <div className="p-2">
         <i
@@ -11,4 +14,7 @@ export default function StudentReview () {
         ></i>
       </div>
     );
+  }
 }
+
+export default StudentReview;
