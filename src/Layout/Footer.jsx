@@ -1,13 +1,6 @@
  const Footer = () => {
     return (
-      <p
-        style={{
-          color: "gray",
-          backgroundColor: "black",
-          marginTop: "10px",
-          textAlign: "center",
-        }}
-      >
+      <p className="footer-text">
         Happy Coding!
       </p>
     );

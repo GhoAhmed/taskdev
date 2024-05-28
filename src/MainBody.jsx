@@ -9,17 +9,13 @@ class MainBody extends React.Component {
       <div style={{ minHeight: "70vh" }}>
         <p>
           In this course, we will learn {whatWeWillLearn} by building
-          TaskOPedia! <br />
+          TaskDev! <br />
           Total Lecture - {lectureCount}
         </p>
         <ul>
           <li>Basic Foundation</li>
           <li>Functional and Class Components</li>
         </ul>
-        {/* <div>
-        Enter Task :{" "}
-        <input maxLength={5} readOnly={false} placeholder="Ben"></input>
-      </div> */}
         <div className="container row">Students Enrolled</div>
         <Student
           experience={2}
@@ -36,7 +32,9 @@ class MainBody extends React.Component {
         <Student
           experience={7}
           name="Rene Parker"
-        />
+        >
+          <StudentReview />
+        </Student>
       </div>
     );
   }

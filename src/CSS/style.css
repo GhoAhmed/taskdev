@@ -7,3 +7,10 @@
     color: chocolate;
   }
   
+/* Footer styles */
+.footer-text {
+  color: gray;
+  background-color: black;
+  margin-top: 30px;
+  text-align: center;
+}

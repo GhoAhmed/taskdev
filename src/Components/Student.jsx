@@ -3,7 +3,7 @@ import React from "react";
 class Student extends React.Component {
   render() {
     return (
-      <div className="col-4 p-1">
+      <div className="col-6 p-1">
         <div className="row border">
           <div className="col-2">
             <img src={`https://ui-avatars.com/api/?name=${this.props.name}`} className="w-100 py-2" alt="avatar"></img>
